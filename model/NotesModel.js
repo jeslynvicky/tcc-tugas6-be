@@ -1,5 +1,7 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js";
+import { title } from "process";
+import sequelize from "sequelize";
 
 const Notes = db.define('notesdata', {
     judul: { type: Sequelize.STRING(80), allowNull: true }, // VARCHAR(80)
