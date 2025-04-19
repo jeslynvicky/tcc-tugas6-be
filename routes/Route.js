@@ -1,5 +1,5 @@
 import express from "express";
-import { createNotesdata, getNotesdata, updateNotesdata , deleteNotesdata} from "../controller/NotesController.js";
+import { createNotesdata, getNotesdata, getNotesById, updateNotesdata , deleteNotesdata} from "../controller/NotesController.js";
 
 const router = express.Router();
 
@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/notesdata', getNotesdata);
 
 //endpoint get by id
-router.get("/notes/:id", NotesController.getNotesById);
+router.get("/notes/:id", getNotesById);
 
 //endpoint create data notes
 router.post('/tambah-notes', createNotesdata);
