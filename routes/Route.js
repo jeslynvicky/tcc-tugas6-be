@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/notesdata', getNotesdata);
 
 //endpoint get by id
-router.get("/notes/:id", NoteController.getNotesById);
+router.get("/notes/:id", NotesController.getNotesById);
 
 //endpoint create data notes
 router.post('/tambah-notes', createNotesdata);
