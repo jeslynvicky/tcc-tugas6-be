@@ -12,4 +12,6 @@ app.use(express.json());
 app.get("/", (req, res) => res.render("index"));
 app.use(Route);
 
-app.listen(3000, ()=>console.log('Server up and running . . . '));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server up and running on port ${PORT}...`));
+
